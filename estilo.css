@@ -1,0 +1,21 @@
+
+body{
+    margin: 10px;
+    background-color: #fffbf7;
+    /*background-image: url('fondo.jpg');
+    background-repeat: no-repeat;*/
+}
+
+
+h2{
+    color: #46484c;
+}
+
+b,strong{
+    color: #8b8b8bcc;
+}
+button{
+    color: #fff;
+    background-color: #025157;
+}
+
