@@ -1,32 +1,44 @@
-.ayuda{
-    color: #7c8484;
-    color: #242c2c;
-    color: #7a7c7c;
-    color: #666c6c;
-    color: #e4e4e4;
-
+body{
+    margin: 10px;
+    background-color: #1d467e;
+    background-image: url(fondo.jpg);
+    background-attachment: fixed;
+    color: white;
 }
-/*  SESION 1 */
-body {
-    background-color: #e4e4e4;
-    /* background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png'); */
+.menu{
+    display: flex;
+    justify-content: center;
 }
-  
-h1 {
-    color: #46484c;
-    text-align: center;
+.items{
+    display: inline-block;
+    list-style: none;
 }
-
-p {
-    color: #8b8b8bcc;
-    font-family: verdana;
+.items > a{
+    margin: 5px 10px 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 5px;
     font-size: 20px;
+    color: #fff;
+}
+.items > a:hover{
+    background-color: #B2D5DA;
+    color: #043A41;
+    border-radius: 5px;
+}
+.active > a{
+    background-color: #B2D5DA;
+    border-radius: 5px;
+    color: #043A41;
+}
+.card{
+    background-color: #e4e4e4;
+    padding: 10px;
+    color: #7c8484;
 }
 
-button {
-    color: #fff;
-    background-color: #025157;
-}
+
 
 /* SESION 2 */
 .header {

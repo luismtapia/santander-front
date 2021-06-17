@@ -1,0 +1,39 @@
+body{
+    margin: 10px;
+    background-color: #1d467e;
+    background-image: url(fondo.jpg);
+    background-attachment: fixed;
+    color: white;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.items{
+    display: inline-block;
+    list-style: none;
+}
+.items > a{
+    margin: 5px 10px 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 5px;
+    font-size: 20px;
+    color: #fff;
+}
+.items > a:hover{
+    background-color: #B2D5DA;
+    color: #043A41;
+    border-radius: 5px;
+}
+.active > a{
+    background-color: #B2D5DA;
+    border-radius: 5px;
+    color: #043A41;
+}
+.card{
+    background-color: #e4e4e4;
+    padding: 10px;
+    color: #7c8484;
+}
