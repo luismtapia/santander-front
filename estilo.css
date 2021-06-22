@@ -6,23 +6,45 @@
     color: #e4e4e4;
 
 }
+
+
+
+
+
+.capterra{
+    display: flex;
+    justify-content: center;
+}
+.intro_group_image{
+    width: 50px;
+    height: 100px;
+    margin: 100px auto;
+}
+
+
+
+
+
+
 /*  SESION 1 */
 body {
     background-color: #e4e4e4;
     /* background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png'); */
 }
-  
 h1 {
     color: #46484c;
     text-align: center;
 }
-
 p {
-    color: #8b8b8bcc;
+    /* color: #46484c; */
     font-family: verdana;
     font-size: 20px;
 }
-
+input {
+    text-align: start;
+    cursor: text;
+    margin: 0em;
+}
 button {
     color: #fff;
     background-color: #025157;
@@ -41,7 +63,13 @@ button {
 li {
     display: inline;
 }
-
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
 .header > * {
     display: inline-block;
     font-size: 16px;
@@ -92,4 +120,66 @@ li {
     padding: 12px 14px 12px 14px;
     border: none;
     border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SESION 3 */
+.promo{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.publicidad{
+    margin-left: 5px;
+    
+}
+.publicidad h3{
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: #025157;
+}
+.publicidad > p{
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.publicidad form > p{
+    color: #343434;
+    
+}
+.publicidad button{
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 20px;
+    font-size: 20px;
+}
+.publicidad input{
+    border: 1px solid #b6b6b6;
+    border-radius: 5PX;
+    padding: 20px;
+    font-size: 20px;
 }
