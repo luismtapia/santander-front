@@ -1,53 +1,70 @@
+:root{
+    --fondo: #fffbf7;
+    --letra_verde: #025157;
+    --yoteayudo: rgb(245, 4, 4);
+    --fuente: fantasy;
+}
 .ayuda{
     color: #7c8484;
     color: #242c2c;
     color: #7a7c7c;
     color: #666c6c;
     color: #e4e4e4;
-
 }
-
-
-
-
-
-.capterra{
-    display: flex;
-    justify-content: center;
-}
-.intro_group_image{
-    width: 50px;
-    height: 100px;
-    margin: 100px auto;
-}
-
-
-
 
 
 
 /*  SESION 1 */
 body {
-    background-color: #e4e4e4;
-    /* background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png'); */
+    background-color: var(--fondo);
 }
-h1 {
-    color: #46484c;
+.seccion1{
+    display: none;
+}
+main{
+    margin-top: 285px;
     text-align: center;
 }
+h1 {
+    color: var(--letra_verde);
+    font-family: var(--fuente);
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+h4{
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
 p {
-    /* color: #46484c; */
+    color: #8b8b8bcc;
     font-family: verdana;
+    margin-top: 15px;
     font-size: 20px;
 }
+.capterra{
+    display: flex;
+    justify-content: center;
+}
 input {
-    text-align: start;
+    /* outline: tomato; */
     cursor: text;
-    margin: 0em;
+    border: 1px solid #b6b6b6;
+    border-radius: 10px 0px 0px 10px;
+    padding: 20px;
+    font-size: inherit;
 }
 button {
+    cursor: pointer;
     color: #fff;
     background-color: #025157;
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 20px;
+    font-size: inherit;
 }
 
 /* SESION 2 */
@@ -59,7 +76,6 @@ button {
     line-height: 45px;
     font-family: sans-serif;
 }
-
 li {
     display: inline;
 }
@@ -77,43 +93,35 @@ li {
     height: 100%;
     line-height: 45px;
 }
-
 .logo { 
     width: 15%;
 }
-
 .logo > img {
     height: 100%;
 }
-
 .navbar {
     width: 65%;
     text-align: center;
     color: #025157;
     font-weight: 500;
 }
-
 .item{
     margin-left: 25px;
     margin-right: 25px;
 }
-
 .actions {
     width: 20%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
 }
-
 .actions > *{
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .actions > a{
     color: #67b54b;
 }
-
 .actions > button{
     color: #fff;
     background-color: #67b54b;
@@ -122,17 +130,6 @@ li {
     border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* SESION 3 */
 .promo{
     display: flex;
@@ -140,20 +137,21 @@ li {
     width: 70%;
     margin: 100px auto;
     align-items: center;
+    border: 2px solid var(--yoteayudo);
 }
 .video{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid var(--yoteayudo);
 }
 .video img {
     width: 120px;
     margin-top: 10px;
 }
-
 .publicidad{
-    margin-left: 5px;
-    
+    border: 2px solid var(--yoteayudo);
+    margin-left: 40px;
 }
 .publicidad h3{
     font-family: 'Segoe UI', Verdana, sans-serif;
@@ -167,19 +165,87 @@ li {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-.publicidad form > p{
-    color: #343434;
-    
+
+
+
+
+
+
+
+
+
+
+
+/* pOSTWORK SESION 3 */
+.historias-de-exito{
+    background-color: #a1d683;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 10%;
+    /* border: 2px solid blue; */
 }
-.publicidad button{
+.marcas {
+    /* margin: auto 75px auto 75px; */
+    flex: 2;
+    padding-right: 100px;
+    /* width: 500px; */
+    border: 2px solid red;
+}
+.marcas img{
+    width: 500px;
+    /* vertical-align: middle; */
+    border: 2px solid red;
+}
+.historias-de-exito h1{
+    font-family: var(--fuente);
+    font-size: 40px;
+    line-height: 40px;
+    color: #025157;
+}
+.historias-de-exito p{
+    color: #000;
+}
+.historias-de-exito button{
     border: 0px;
-    border-radius: 0px 10px 10px 0px;
-    padding: 20px;
-    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+    background-color: var(--letra_verde);
+    color: #FFFFFF;
 }
-.publicidad input{
-    border: 1px solid #b6b6b6;
-    border-radius: 5PX;
+.tarjeta {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    /* margin: 40px 0 60px 0; */
+}
+.tarjeta button{
+    width: 100%;
+}
+.encabezado{
+    /*  */
+}
+
+.cuerpo{
     padding: 20px;
-    font-size: 20px;
+}
+.cuerpo .info{
+    display: flex;
+    align-items: center;
+    margin: 0 5% 20% 5%;
+}
+.info p{
+    margin-left: 5%;
+    color: #7b7c7e;
+}
+.cuerpo h5{
+    color: #025157;
+    font-size: 10px;
+}
+.cuerpo h3{
+    color: #000;
+    font-size: 30px;
 }
