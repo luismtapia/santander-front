@@ -1,3 +1,4 @@
+/* import url(); */
 :root{
     --fondo: #fffbf7;
     --letra_verde: #025157;
@@ -52,9 +53,6 @@ p {
 input {
     /* outline: tomato; */
     cursor: text;
-    border: 1px solid #b6b6b6;
-    border-radius: 10px 0px 0px 10px;
-    padding: 20px;
     font-size: inherit;
 }
 button {
@@ -62,14 +60,22 @@ button {
     color: #fff;
     background-color: #025157;
     border: 0px;
+    font-size: inherit;
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+}
+.subscribe button{
     border-radius: 0px 10px 10px 0px;
     padding: 20px;
-    font-size: inherit;
 }
-
+.subscribe input[type=email]{
+    border: 1px solid #b6b6b6;
+    border-radius: 10px 0px 0px 10px;
+    padding: 20px;
+}
 /* SESION 2 */
 .header {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 0;
@@ -84,6 +90,7 @@ li {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     background-color: #fffbf7;
 }
 .header > * {
@@ -130,6 +137,10 @@ li {
     border-radius: 5px;
 }
 
+
+
+
+
 /* SESION 3 */
 .promo{
     display: flex;
@@ -137,20 +148,17 @@ li {
     width: 70%;
     margin: 100px auto;
     align-items: center;
-    border: 2px solid var(--yoteayudo);
 }
 .video{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid var(--yoteayudo);
 }
 .video img {
     width: 120px;
     margin-top: 10px;
 }
 .publicidad{
-    border: 2px solid var(--yoteayudo);
     margin-left: 40px;
 }
 .publicidad h3{
@@ -168,84 +176,80 @@ li {
 
 
 
-
-
-
-
-
-
-
-
 /* pOSTWORK SESION 3 */
-.historias-de-exito{
+.post{
     background-color: #a1d683;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 5% 10%;
-    /* border: 2px solid blue; */
+    justify-content: space-evenly;
 }
-.marcas {
-    /* margin: auto 75px auto 75px; */
-    flex: 2;
-    padding-right: 100px;
-    /* width: 500px; */
-    border: 2px solid red;
-}
-.marcas img{
-    width: 500px;
-    /* vertical-align: middle; */
-    border: 2px solid red;
-}
-.historias-de-exito h1{
-    font-family: var(--fuente);
-    font-size: 40px;
-    line-height: 40px;
-    color: #025157;
-}
-.historias-de-exito p{
-    color: #000;
-}
-.historias-de-exito button{
-    border: 0px;
-    border-radius: 10px;
-    padding: 15px 20px 15px 20px;
-    background-color: var(--letra_verde);
-    color: #FFFFFF;
-}
-.tarjeta {
-    background-color: #FFFFFF;
-    border-radius: 10px;
+/* MARCAS PATROCINADORES O LO QUE SEA*/
+.brands{
+    width: 700px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /*PARA BOTON alineado a izquierda :) */
+}
+.brands h1{
+    font-size: 40px;
+    line-height: 40px;
+}
+.brands p{
+    color: #3e3f3e;
+}
+.brands img{
+    width: 500px;
+}
+/* Tarjeta */
+.card-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    /* margin: 40px 0 60px 0; */
+    width: 348PX;
 }
-.tarjeta button{
-    width: 100%;
+.card {
+    background-color: #FFFFFF;
+    font-family: Impact;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
-.encabezado{
-    /*  */
+.card-header img{
+    height: 350px;
+    width: 350px;
 }
-
-.cuerpo{
+.card-floating-btn{
+    position: relative;
+    float: right;
+    padding: 50px 25px;
+    top: -100px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: orange;
+}
+.card-body{
     padding: 20px;
 }
-.cuerpo .info{
+.card-title{
+    color: #025157;
+    font-size: 20px;
+}
+.card-descripcion{
+    color: #000;
+    font-size: 28px;
+}
+.card-ads{
     display: flex;
     align-items: center;
-    margin: 0 5% 20% 5%;
-}
-.info p{
-    margin-left: 5%;
     color: #7b7c7e;
 }
-.cuerpo h5{
-    color: #025157;
-    font-size: 10px;
+.card-ads p{
+    margin-left: 15px;
 }
-.cuerpo h3{
-    color: #000;
-    font-size: 30px;
+.card-footer{
+    padding: 0 15%;
+}
+.card button{
+    width: 100%;
 }
