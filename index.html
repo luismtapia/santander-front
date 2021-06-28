@@ -6,8 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matcha</title>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/097a00ad7c.js" crossorigin="anonymous"></script>
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css"> -->
   <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="media.css">
+  <!-- <link rel="stylesheet" href="estilo2.css"> -->
 </head>
 
 <body>
@@ -74,23 +78,24 @@
 
 
 
-
     <main>
-        <h1>Build your blog. Build your business.</h1>
-        <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</h4>
-        <form class="subscribe">
-            <input type="email" placeholder="Email">
-            <button>Try it now</button>
-        </form>
-        <p>Start publishing today with a <strong>free 7-day trial.</strong>
+        <article class="main">
+            <h1>Build your blog. Build your business.</h1>
+            <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</h4>
+            <form class="subscribe">
+                <i class="fas fa-address-card"></i>
+                <input type="email" placeholder="Email">
+                <button type="submit">Try it now</button>
+            </form>
+            <p>Start publishing today with a <strong>free 7-day trial.</strong>
+                <br>
+                <strong>No credit card</strong> required.
+            </p>
             <br>
-            <strong>No credit card required</strong>.
-        </p>
-        <br>
-        <section class="capterra">
-            <img alt="Capterra" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
-            
-        </section>
+            <section class="banner-capterra">
+                <img alt="Capterra" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
+            </section>
+        </article>
     </main>
 
 
@@ -112,11 +117,11 @@
             <p>
                 Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.
             </p>
+            <p>Start publishing today:</p>
             <form class="subscribe">
-                <p>Start publishing today:</p>
                 <div>
                     <input type="email" placeholder="Enter email"/>
-                    <button>Start My trial</button>
+                    <button type="submit">Start My trial</button>
                 </div>
             </form>
         </article>    
@@ -127,31 +132,31 @@
             <div class="brands">
                 <h1>Growing ecommerce brands rely on Matcha.</h1>
                 <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.</p>
-                <button>Who uses Matcha?</button>
+                <button >Who uses Matcha?</button>
                 
                 <img src="images/brands_group.png" alt="Brands Marcas">
             </div>
             
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-header">
+            <div class="brands-card-container">
+                <div class="brands-card">
+                    <div class="brands-card-header">
                         <img src="images/profile-headshot-square.png" alt="Perfil">
                     </div>
-                    <div class="card-floating-btn">
+                    <div class="brands-card-floating-btn">
                         <div class="que-soy">¿Que soy?</div> 
                     </div>
-                    <div class="card-body">
+                    <div class="brands-card-body">
                         <h4 class="card-title">
                             <strong>Everly</strong>
                         </h4>
-                        <h3 class="card-descripcion">
+                        <h3 class="brands-card-descripcion">
                             Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20%
                         </h3>
-                        <div class="card-ads">
+                        <div class="brands-card-ads">
                             <i><img src="icon_cart.png" width="30px" height="auto" alt=""></i>
                             <p> 2% of monthly revenue influenced by conten</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="brands-card-footer">
                             <button>See Case Study</button>
                         </div>
                     </div>
@@ -161,11 +166,99 @@
                 </div>
             </div>
         </article>
+
+
     <!-- SESSION 4 -->
+    <section class="features">
+        <article class="feature-card">
+            <div class="feature-content">
+                <img src="iconos/icon_publish.png" alt="icon publish">
+                <h2>Fill your blog with engaging articles.</h2>
+                <p>Publish to your blog in less time than it takes to drink your morning coffee.</p>
+                <a href="">Publish instantly →</a>
+            </div>
+            <div class="feature-image">
+                <img src="images/image_publish.png" alt="Image publish">
+            </div>
+        </article>
+        <article class="feature-card">
+            <div class="feature-content">
+                <img src="iconos/icon_site_traffic.png" alt="icon traffic">
+                <h2>Attract and engage more website visitors.</h2>
+                <p>Enhance your email, social media channels, and paid ads with content from Matcha.</p>
+                <a href="">Get more site traffic →</a>
+            </div>
+            <div class="feature-image">
+                <img src="images/image_site_traffic.png" alt="Imagen traffic">
+            </div>
+        </article>
+        <article class="feature-card">
+            <div class="feature-content">
+                <img src="iconos/icon_capture.png" alt="icon capture">
+                <h2>Capture more emails with locked content.</h2>
+                <p>Convert 10x more of your traffic into subscribers and nurture them to a sale.</p>
+                <a href="">Grow your email list faster →</a>
+            </div>
+            <div class="feature-image">
+                <img src="images/image_capture.png" alt="Imagen faster">
+            </div>
+        </article>
+        <article class="feature-card">
+            <div class="feature-content">
+                <img src="iconos/icon_roi.png" alt="roi">
+                <h2>Optimize your blog’s performance.</h2>
+                <p>See what content delivers the most traffic, engagement, email subscribers, and sales.</p>
+                <a href="">See content’s ROI →</a>
+            </div>
+            <div class="feature-image">
+                <img src="images/image_roi.png" alt="Imagen ROI">
+            </div>
+        </article>
+    </section>
 
 
+    <section>
+        <div class="platform-before">
+            <h1>How does Matcha wok?</h1>
+            <p>Your blog can be so much more than window dressing. Use Matcha’s <a href="">simple formula</a>  to transform your blog into an ecommerce growth engine.</p>
+            <button>Explore the plataform</button>
+        </div>
+        
+        <article class="platform">
+            <div class="platform-card">
+                <img class="platform-icon" src="iconos/icon_content.png" alt="">
+                <img class="platform-image" src="images/ill-publish.png" alt="">
+                <h2>Publish</h2>
+                <p>Effortlessly fill your blog with content that shoppers want to read.</p>
+                <a href="#">Publish instantly →</a>
+            </div>
+            <div class="platform-card">
+                <img class="platform-icon" src="images/icon_.png" alt="">
+                <img class="platform-image" src="images/ill-promote.png" alt="">
+                <h2>Publish</h2>
+                <p>Effortlessly fill your blog with content that shoppers want to read.</p>
+                <a href="#">Publish instantly →</a>
+            </div>
+            <div class="platform-card">
+                <img class="platform-icon" src="images/icon.png" alt="">
+                <img class="platform-image" src="images/ill-capture.png" alt="">
+                <h2>Publish</h2>
+                <p>Effortlessly fill your blog with content that shoppers want to read.</p>
+                <a href="#">Publish instantly →</a>
+            </div>
+            <div class="platform-card">
+                <img class="platform-icon" src="images/icon_.png" alt="">
+                <img class="platform-image" src="images/ill-measure.png" alt="">
+                <h2>Publish</h2>
+                <p>Effortlessly fill your blog with content that shoppers want to read.</p>
+                <a href="#">Publish instantly →</a>
+            </div>
+        </article>
+    </section>
 
+    <section>
 
+    </section>
 
 
 

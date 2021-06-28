@@ -1,0 +1,42 @@
+@media (max-width: 575px) {
+    .navbar,
+    .actions{
+        display: none;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .main{
+        margin-top: 2vh;
+        /* display: block; */
+    }
+    .banner-capterra> img{
+        width: 100%;
+    }
+    .publicidad > form{
+        flex-direction: column;
+    }
+    .publicidad > form >div {
+        height: 50px;
+        margin-top: 10px;
+
+    }
+    .publicidad > form > div > input{
+        width: 65%;
+    }
+    .promo{
+        flex-direction: column;
+        max-width: 90%;
+
+    }
+    .video > video{
+        width: 100%;
+    }
+    .publicidad{
+        margin-top: 10px;
+    }
+    .publicidad > h3{
+        font-size: 2em;
+        line-height: 1.2;
+    }
+}

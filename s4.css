@@ -1,0 +1,37 @@
+.container{
+    /* display: grid; */
+    display: flex;
+    width: 400px;
+    height: 400px;
+    flex-direction: row;
+    background-color: blue;
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+.container > .item{
+    background-color: gray;
+    width: 50%;
+    height: 50px;
+}
+.main{
+    display: flex;
+}
+.main div:nth-of-type(1){
+    flex-grow: 1;
+}
+.main div:nth-of-type(4){
+    flex-grow: 1;
+}
+
+.reto2{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    background-color: cyan;
+    grid-template-columns: repeat(5, 30fr);
+}
+.reto2 > *{
+    background-color: gold;
+    text-align: center;
+    width: 50%;
+    height: 1em;
+}
