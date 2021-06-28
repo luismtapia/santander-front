@@ -1,3 +1,4 @@
+/* MOBILE FIRST */
 @media (max-width: 575px) {
     .navbar,
     .actions{
@@ -12,6 +13,29 @@
     .banner-capterra> img{
         width: 100%;
     }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    .subscribe{
+        margin: 1px;
+        padding: 0;
+    }
+
+
+
+
+
+
     
     .promo{
         flex-direction: column;
@@ -22,7 +46,9 @@
     .publicidad{
         margin: 0 2vw;
     }
-
+    .subscribe > div > input{
+        width: 50%;
+    }
 
 
 
@@ -38,7 +64,7 @@
         width: 100%;
     }
     .brands{
-        width: 400px;
+        width: 320px;
     }
     .brands img{
         width: 100%;

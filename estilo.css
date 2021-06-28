@@ -74,7 +74,7 @@ button {
     color: #000;
     cursor: text;
     font-size: inherit;
-    position: relative;
+    /* position: relative; */
     padding: 10px;
     border-radius: 6px;
     background-color: white;
