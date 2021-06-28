@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
 
 :root{
-    --fondo: #fffbf7;
+    --color-fondo: #fffbf7;
     --letra-verde: #025157;
     --yoteayudo: rgb(245, 4, 4);
     --fuente: fantasy;
@@ -11,8 +11,7 @@
 /*  SESION 1 */
 body {
     margin: 0px;
-    /* background-color: #839dbc; */
-    background-color: var(--fondo);
+    background-color: var(--color-fondo);
     font-family: "Open Sans", sans-serif;
 }
 .seccion1{
@@ -20,12 +19,12 @@ body {
 }
 main{
     /* margin-top: 185px; */
-    /* text-align: center; */
-    padding: 40px 0 10px 0;
+    text-align: center;
+    padding: 20vh 0 10px 0;
 }
 h1 {
     color: var(--letra-verde);
-    font-family: var(--fuente);
+    font-family: "Alegreya";
     font-size: 3em;
     font-weight: 900;
     margin-bottom: 24px;
@@ -56,13 +55,14 @@ button {
     padding: 15px 20px 15px 20px;
 }
 .main{
-    margin: 10vh;
+    /* margin: 10vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .main > h1,.main h4,.main p{
     color: var(--letra-verde);
+    margin: 2vh;
 }
 .subscribe{
     margin: 2vh 0;
@@ -232,48 +232,53 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 348PX;
+    width: 250PX;
 }
 .brands-card {
     background-color: #FFFFFF;
     font-family: Impact;
     border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 10px 1px #67b54b;
 }
 .brands-card-header img{
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 0 0;
 }
 .brands-card-floating-btn{
     position: relative;
     float: right;
-    padding: 50px 25px;
-    top: -100px;
+    padding: 35px 10px;
+    top: -60px;
     right: 20px;
     border-radius: 50%;
     background-color: orange;
 }
 .brands-card-body{
     padding: 20px;
+    
 }
 .brands-card-title{
     color: #025157;
-    font-size: 20px;
+    font-size: 1em;
 }
 .brands-card-descripcion{
     color: #000;
-    font-size: 28px;
+    font-size: 1.4em;
 }
 .brands-card-ads{
     display: flex;
     align-items: center;
     color: #7b7c7e;
+    font-size: 0.8em;
+    margin-bottom: 10px;
 }
 .brands-card-ads p{
     margin-left: 15px;
 }
 .brands-card-footer{
-    padding: 0 15%;
+    padding: 0 8%;
 }
 .brands-card button{
     width: 100%;
@@ -287,23 +292,20 @@ li {
     display: grid;
     grid-template: repeat(2, 350px) / repeat(2, 1fr);/* rows/column */
     background-color: var(--letra-verde);
-    padding: 50px 100px 80px 100px;
+    padding: 10vh 20vh 10vh 20vh;
 }
 .feature-card{
     background-color: white;
     margin: 15px;
     padding-left: 40px;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #025157;
     overflow: hidden;
     display: flex;
-    /* flex-basis: 0vh; */
     align-items: center;
-    /* filter: blur(1px); */
 }
 .feature-card:hover{
-    transform: translateX(-10px);
-    background-color: var(--fondo);
-    transition: all 600ms;
+    background-color: var(--color-fondo);
 }
 .feature-content > img{
     height: 50px;
@@ -320,49 +322,55 @@ li {
     transform: translateX(-30px);
     transition: all 800ms;
 }
+.feature-content > p{
+    font-size: 1em;
+}
 .feature-content > a,.platform-card > a{
     text-decoration: none;
     color: var(--verdeclaro);
     font-weight: bold;
 }
 .platform-before{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0vh 10vh;
-    /* justify-content: space-between; */
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.platform-before > p> a{
+    text-decoration: none;
+    color: #67b54b;
 }
 .platform{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 5vh;
-    margin-top: 10vh;
     padding: 15vh;
 }
 .platform-card{
     background-color: #fff;
     border-radius: 10px;
-    border: 1px solid #242c2c;
-    /* width: 40vh; */ 
+    border: 1px solid #a2a3a3;
+    width: 250px;
 }
 .platform-image{
     width: 40vh;
     height: 50vh;
 }
 .platform-icon{
+    position: absolute;
     margin: 30px 0 0 30px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .platform-card > h2{
     color: var(--letra-verde);
+    font-family: "Alegreya";
     text-align: center;
 }
 .platform-card > p, .platform-card > a{
     padding: 0 5vh 0 5vh;
     padding-bottom: 10px;
-    /* background-color: #67b54b; */
 }
+
 
 
 
