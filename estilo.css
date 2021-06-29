@@ -14,92 +14,11 @@ body {
     background-color: var(--color-fondo);
     font-family: "Open Sans", sans-serif;
 }
-.seccion1{
-    display: none;
-}
-main{
-    /* margin-top: 185px; */
-    text-align: center;
-    padding: 20vh 0 10px 0;
-}
-h1 {
-    color: var(--letra-verde);
-    font-family: "Alegreya";
-    font-size: 3em;
-    font-weight: 900;
-    margin-bottom: 24px;
-}
-h4{
-    color: #46484c;
-    font-family: "Slabo 27px", serif;
-    font-size: 1.25em;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-p {
-    color: #8b8b8bcc;
-    font-family: verdana;
-    margin-top: 15px;
-    font-size: 1.25em;
-}
-.banner-capterra > img{
-    width: 100%;
-}
-button {
-    cursor: pointer;
-    color: #fff;
-    background-color: #025157;
-    border: 0px;
-    font-size: inherit;
-    border-radius: 10px;
-    padding: 15px 20px 15px 20px;
-}
-.main{
-    /* margin: 10vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main > h1,.main h4,.main p{
-    color: var(--letra-verde);
-    margin: 2vh;
-}
-.subscribe{
-    margin: 2vh 0;
-    padding: 2vh 4vh;
-    border-radius: 10px;
-}
-.subscribe input[type=email]{
-    text-decoration: none;
-    color: #000;
-    cursor: text;
-    font-size: inherit;
-    /* position: relative; */
-    padding: 10px;
-    border-radius: 6px;
-    background-color: white;
-}
-.subscribe input[type=email]::placeholder{
-    color: #000;
-}
-.subscribe input[type=email]:focus{
-    outline: none;
-}
-.subscribe button{
-    color: #fff;
-    cursor: pointer;
-    font-size: inherit;
-    position: relative;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--letra-verde);
-}
 /* SESION 2 */
 .header {
     margin-top: 5px;
     margin-left: 20px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     font-size: 0;
     line-height: 45px;
     font-family: sans-serif;
@@ -160,6 +79,94 @@ li {
     border: none;
     border-radius: 5px;
 }
+.publish-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5vh 2vw;
+}
+.publish-form > *{
+    margin: 1vh 0;
+}
+main{
+    margin-top: 10vh;
+    text-align: center;
+    padding: 10vh 0 10vh 0;
+}
+h1 {
+    color: var(--letra-verde);
+    font-family: "Alegreya";
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+h4{
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+p {
+    color: #8b8b8bcc;
+    font-family: verdana;
+    margin-top: 15px;
+    font-size: 1.25em;
+}
+.banner-capterra > img{
+    width: 100%;
+}
+button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #025157;
+    border: 0px;
+    font-size: inherit;
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+}
+.main{
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main > h1,.main h4,.main p{
+    color: var(--letra-verde);
+    margin: 2vh;
+}
+.subscribe{
+    margin: 2vh 0;
+    padding: 2vh 4vh;
+    border-radius: 10px;
+}
+.subscribe input[type=email]{
+    text-decoration: none;
+    color: #000;
+    cursor: text;
+    font-size: inherit;
+    /* position: relative; */
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+}
+.subscribe input[type=email]::placeholder{
+    color: #000;
+}
+.subscribe input[type=email]:focus{
+    outline: none;
+}
+.subscribe button{
+    color: #fff;
+    cursor: pointer;
+    font-size: inherit;
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--letra-verde);
+}
+
 
 
 
@@ -173,12 +180,12 @@ li {
     margin: 100px auto;
     align-items: center;
 }
-.video{
+.publicidad-video{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.video img {
+.publicidad-video img {
     width: 120px;
     margin-top: 10px;
 }

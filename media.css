@@ -1,64 +1,42 @@
 /* MOBILE FIRST */
+
+/** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-    .navbar,
-    .actions{
+    .navbar, .actions{
         display: none;
     }
     h1{
         font-size: 2em;
+        
     }
-    .main{
-        margin-top: 2vh;
+    main{
+        margin-top: 0;
+        padding: 2vh 0 2vh 0;
     }
-    .banner-capterra> img{
-        width: 100%;
-    }
-
-
-
-    
-
-
-
-
-
-
-
-
-
     .subscribe{
         margin: 1px;
         padding: 0;
-    }
-
-
-
-
-
-
-    
-    .promo{
-        flex-direction: column;
-        margin: 2vh 2vw;
-        align-items: flex-start;
-        width: 96%;
-    }
-    .publicidad{
-        margin: 0 2vw;
+        background-color: black;
     }
     .subscribe > div > input{
         width: 50%;
     }
-
-
-
-
-
-
-
-
-
-
+    .promo{
+        flex-direction: column;
+        margin: 2vh 2vw;
+        align-items: flex-start;
+        max-width: 90%;
+    }
+    .publicidad{
+        margin: 0 2vw;
+    }
+    .publicidad > h3{
+        font-size: 1.5em;
+    }
+    .publicidad > p{
+        font-size: 1em;
+        line-height: 20px;
+    }
     .post{
         flex-direction: column;
         width: 100%;
@@ -69,41 +47,25 @@
     .brands img{
         width: 100%;
     }
-
-
-
-
-
-
-
-
     .features{
         grid-template-columns: 1fr;
         padding: 1vh 1vw;
     }
     .feature-content{
-        padding: 2vh 2vw;
+        padding: 2vh 1vw;
+    }
+    .feature-content > img{
+        height: 15%;
+        width: 15%;
+    }
+    .feature-card{
+        margin: 5px;
+        padding-left: 20px;
+        display: block;
     }
     .feature-image > img{
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .platform{
         grid-template-columns: 1fr;
         padding: 5vh 5vw;
@@ -127,4 +89,37 @@
         width: 30vw;
         height: 30vh;
     }
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+}
+  
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+  
+  /** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+  
+  /** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+  
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+    
 }
