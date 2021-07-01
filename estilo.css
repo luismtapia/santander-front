@@ -50,10 +50,18 @@ li {
     height: 100%;
 }
 .navbar {
-    width: 65%;
-    text-align: center;
-    color: #025157;
+    /* width: 65%; */
+    /* text-align: center; */
+    /* color: #025157;
     font-weight: 500;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; */
+    background-color: #fffbf7;
 }
 .item{
     margin-left: 25px;
@@ -381,6 +389,21 @@ button {
 
 
 
-
-
+.centrado{
+    text-align: center;
+}
+section{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.bg-matcha{
+    background-color: #025157;
+    color: white;
+}
+.text-matcha{
+    color: #025157;
+}
+.list-unstyled{
+    display: block;
+}
   
