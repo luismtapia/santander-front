@@ -24,9 +24,9 @@ body {
     font-family: sans-serif;
     /* opacity: 10%; */
 }
-li {
+/* li {
     display: inline;
-}
+} */
 .fixed-header{
     position: fixed;
     top: 0;
@@ -389,9 +389,6 @@ button {
 
 
 
-.centrado{
-    text-align: center;
-}
 section{
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -403,7 +400,3 @@ section{
 .text-matcha{
     color: #025157;
 }
-.list-unstyled{
-    display: block;
-}
-  
