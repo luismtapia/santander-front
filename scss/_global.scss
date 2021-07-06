@@ -1,0 +1,18 @@
+/** _global.scss */
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$light-green-text: #67b54b;
+$white: #ffffff;
+$card-title: #4a4a4a;
+$metadata-text: #979797;
+$card-text: #4a4a4a;
+
+
+/** fuentes */
+$font-title: "Alegreya", serif;
+
+/** placeholders */
+%base-title {
+    font-family: $font-title;
+    color: $dark-green-text;
+}
