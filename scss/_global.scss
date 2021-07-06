@@ -7,7 +7,23 @@ $card-title: #4a4a4a;
 $metadata-text: #979797;
 $card-text: #4a4a4a;
 
+$color0: #FbFbFb;
+$color1: #F0F0F0;
+$color2: #E8E7E7;
+$color3: #CECDC9;
+$color4: #EBEBED;
+$color5: #E8F8F0;
+$color6: #BCBAB3;
+$color7: #495137;
+$color8: #55573B;
+$color9: #545C4B;
+$color10: #b9e07a;
+$color11: #6E5D37;
 
+%navbar {
+    font-family: 'Courier New', Courier, monospace;
+    color: $color5;
+}
 /** fuentes */
 $font-title: "Alegreya", serif;
 

@@ -7,6 +7,31 @@
 }
 
 /** main.scss */
+body {
+  background-color: #FbFbFb;
+  background: linear-gradient(to bottom, #FbFbFb 0%, #F0F0F0 80%, #545c4b 100%);
+}
+
+.navbar {
+  background-color: #FbFbFb;
+}
+.navbar li {
+  color: #F0F0F0;
+}
+
+.active {
+  margin-bottom: red;
+}
+
+.sesion1 h1, .sesion1 h2, .sesion1 h3, .sesion1 h4, .sesion1 p {
+  color: #545C4B;
+}
+.sesion1 .publish {
+  background-image: url("/assets/bg3.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 .blog {
   background-color: #ffffff;
   max-width: unset;

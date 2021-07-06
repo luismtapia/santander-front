@@ -1,6 +1,34 @@
 /** main.scss */
 @use 'global' as *;
 
+body{
+    background-color: $color0;
+    background: linear-gradient(to bottom, $color0 0%, $color1 80%, #545c4b 100%);
+}
+.navbar{
+    background-color: $color0;
+    
+    li{
+      color: $color1;
+    }
+}
+.active{
+  margin-bottom: red;
+}
+.sesion1{
+    h1,h2,h3,h4,p{
+      color: $color9;
+    }
+    .publish{
+        background-image: url("/assets/bg3.jpg");
+        // background-position: center;
+        // background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+
+
 .blog {
   background-color: $white;
   max-width: unset;
