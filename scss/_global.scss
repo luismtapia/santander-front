@@ -3,26 +3,44 @@ $dark-green-title: #025157;
 $dark-green-text: #135359;
 $light-green-text: #67b54b;
 $white: #ffffff;
+$black: #000;
 $card-title: #4a4a4a;
 $metadata-text: #979797;
 $card-text: #4a4a4a;
 
-$color0: #FbFbFb;
+$text-parrafo: 1em;
+$bg-color: #FbFbFb;
 $color1: #F0F0F0;
 $color2: #E8E7E7;
 $color3: #CECDC9;
-$color4: #EBEBED;
 $color5: #E8F8F0;
-$color6: #BCBAB3;
+$color6: #3c5722;
 $color7: #495137;
 $color8: #55573B;
 $color9: #545C4B;
 $color10: #b9e07a;
 $color11: #6E5D37;
+$color12: #d9d476;
+$colormadera: #e2b05a;
+$sombra: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+$radio: 30px;
 
 %navbar {
-    font-family: 'Courier New', Courier, monospace;
+    // font-family: 'Courier New', Courier, monospace;
+    font-family: "Open Sans", sans-serif;
+    background-color: $bg-color;
     color: $color5;
+}
+%main{
+    padding: 1vh 0 1vh 0;
+    background: linear-gradient(#b5b796 0%, rgba(185, 224, 122, 0.7) 75%, #0d1b14 100%), url("assets/background/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0% 100% 90% 20% / 100% 0% 100% 0%;
+    .main{
+        margin-top: 1rem;
+    }
 }
 /** fuentes */
 $font-title: "Alegreya", serif;
@@ -32,3 +50,12 @@ $font-title: "Alegreya", serif;
     font-family: $font-title;
     color: $dark-green-text;
 }
+
+%boton-subscribe{
+    border-radius: 0;
+    padding: 0;
+}
+
+// %cards{
+    
+// }

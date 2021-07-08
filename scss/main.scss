@@ -2,31 +2,198 @@
 @use 'global' as *;
 
 body{
-    background-color: $color0;
-    background: linear-gradient(to bottom, $color0 0%, $color1 80%, #545c4b 100%);
+    background-color: $bg-color;
+    background: linear-gradient(to bottom, $bg-color 0%, $color1 80%, #545c4b 100%);
 }
 .navbar{
-    background-color: $color0;
-    
-    li{
-      color: $color1;
-    }
+    @extend %navbar;
 }
 .active{
-  margin-bottom: red;
+    margin-bottom: red;
+}
+main{
+    @extend %main;
+}
+h1{
+  color: $color9;
+}
+.send-email{
+    padding: 0;
+    margin: 0;
+    .input-group-prepend{
+        span{
+          border: none;
+          background-color: $color6;
+        }
+    }
+    input{
+        outline: none;
+        border: none;
+        color: $colormadera;
+        background-color: $color6;
+    }
+    .input-group-append{
+      span{
+        background-color: $color6;
+        border: none;
+      }
+    }
 }
 .sesion1{
     h1,h2,h3,h4,p{
       color: $color9;
     }
-    .publish{
-        background-image: url("/assets/bg3.jpg");
-        // background-position: center;
-        // background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
+    .formulario{
+        background-color: $black;
+        border-radius: $radio;
+        padding: 0;
+        .card{
+            background-color: $black;
+            border-radius: $radio;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: $radio 0 0 $radio;
+            }
+            .card-form-titulo{
+              padding: 15px 0;
+                h2{
+                    color: $colormadera;
+                }
+            }
+            .card-form{
+                padding-left: 30px;
+                margin-bottom: 20px;
+                border-radius: 10px 50px 40px 100px;
+                .form-group {
+                  .input-group-prepend{
+                      .input-group-text{
+                          background-color: $black;
+                          color: white;
+                          border: none;
+                      }
+                  }
+                  input{
+                      border: none;
+                      outline: none;
+                      color: $colormadera;
+                      background-color: $black;
+                      border-bottom: 1px solid #fff;
+                  }
+              }
+              button{
+                padding: 5px 30px;
+                background-color: $colormadera;
+                color: $black;
+                border-radius: 230px;
+                font-weight: 700;
+              }
+            }
+        }
     }
 }
+.post{
+    background-color: $color10;
+}
+.features{
+    background-image: url("assets/background/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+//CARDS DE BLOG
+.card-blog {
+    margin: 40px 6px;
+    .card-blog-image {
+        height: 60%;
+        position: relative;
+        overflow: hidden;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: -30px;
+        border-radius: 6px;
+        box-shadow: $sombra;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+        }
+        .card-blog-metadata{
+            padding: 5px 0;
+            font-size: 0.8rem;
+            .category{
+                color: $light-green-text;
+            }
+            .read-time{
+              color: $color9;
+            }
+        }
+    }
+    .card-blog-body {
+        margin-top: 30px;
+        padding: 0 2rem;
+        .card-blog-title{
+            color: $color9;
+        }
+        .card-blog-description{
+            font-size: $text-parrafo;
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    .card-blog-footer {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        text-align: center;
+        .card-blog-autor{
+            font-size: 1rem;
+            font-weight: 800;
+            color: black;
+        }
+        .card-blog-avatar {
+            max-width: 90px;
+            max-height: 90px;
+            margin: -50px auto 0;
+            margin-top: 10px;
+            margin-bottom: -150px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: $sombra;
+            img{
+              max-width: 100px;
+              max-height: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .blog {

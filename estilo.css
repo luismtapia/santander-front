@@ -11,31 +11,17 @@
 /*  SESION 1 */
 body {
     margin: 0px;
-    background-color: var(--color-fondo);
     font-family: "Open Sans", sans-serif;
 }
 /* SESION 2 */
 .header {
     margin-top: 5px;
     margin-left: 20px;
-    /* margin-right: 20px; */
     font-size: 0;
     line-height: 45px;
     font-family: sans-serif;
-    /* opacity: 10%; */
 }
-/* li {
-    display: inline;
-} */
-.fixed-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #fffbf7;
-    border-bottom: 1px solid #fff;
-}
+
 .header > * {
     display: inline-block;
     font-size: 16px;
@@ -48,34 +34,6 @@ body {
 }
 .logo > img {
     height: 100%;
-}
-header.masthead {
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("bg-masthead.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-  }
-.navbar {
-    /* width: 65%; */
-    /* text-align: center; */
-    /* color: #025157;
-    font-weight: 500;
-
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1; */
-    /* background-image: url("assets/bg5.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover; */
-    /* background-color: #fffbf7; */
 }
 .item{
     margin-left: 25px;
@@ -101,27 +59,9 @@ header.masthead {
     border: none;
     border-radius: 5px;
 }
-.publish-form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 5vh 2vw;
-}
-.publish-form > *{
-    margin: 1vh 0;
-}
 main{
-    /* margin-top: 10vh; */
     text-align: center;
-    padding: 10vh 0 10vh 0;
-    
-    /* background-image: url("assets/bg0.jpg"); */
-    /* background: linear-gradient(to bottom, #b5b796 0%, #0d1b14 100%),url("assets/bg2.jpg"); */
-    background: linear-gradient(to bottom, #b5b796 0%, rgba(185, 224, 122, 0.7) 75%, #0d1b14 100%), url("assets/bg1.jpg");
-    background-repeat: no-repeat;
-    /* background-attachment: scroll; */
-    background-position: center;
-    background-size: cover;
+    padding: 4vh 0 4vh 0;
 }
 h1 {
     color: var(--letra-verde);
@@ -420,5 +360,12 @@ section{
     color: white;
 }
 .text-matcha{
+    color: #025157;
+}
+
+.fas{
+    color: #3c5722;
+}
+.navbar .collapse .navbar-nav .nav-link{
     color: #025157;
 }
