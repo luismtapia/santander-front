@@ -8,22 +8,25 @@ body{
 .navbar{
     @extend %navbar;
 }
-.active{
-    margin-bottom: red;
-}
 main{
     @extend %main;
 }
 h1{
-  color: $color9;
+    color: $color9;
 }
-.send-email{
+input::placeholder{
+    color: $white;
+}
+.signup-form{
     padding: 0;
     margin: 0;
     .input-group-prepend{
         span{
-          border: none;
-          background-color: $color6;
+            border: none;
+            background-color: $color6;
+                i{
+                  color: $colormadera;
+                }
         }
     }
     input{
@@ -32,10 +35,27 @@ h1{
         color: $colormadera;
         background-color: $color6;
     }
-    .input-group-append{
-      span{
-        background-color: $color6;
+    input::placeholder{
+      color: $white;
+    }
+    input:focus{
+        outline: none;
         border: none;
+        background-color: $color6;
+        color: $colormadera;
+    }
+    .input-group-append{
+      button {
+        cursor: pointer;
+        color: #fff;
+        background-color: $colormadera;
+        font-size: inherit;
+        border-radius: unset;
+        padding: unset;
+        span{
+            background-color: $colormadera;
+            border: none;
+        }
       }
     }
 }
@@ -72,6 +92,9 @@ h1{
                           background-color: $black;
                           color: white;
                           border: none;
+                          i{
+                              color: $colormadera;
+                          }
                       }
                   }
                   input{
@@ -101,6 +124,48 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    .feature-card{
+      position: relative;
+      box-shadow: $sombra;
+      .feature-content{
+        z-index: 1;
+      }
+      // overflow: visible;  
+    }
+    .feature-hover{
+      position: absolute;
+      top: -185px;
+      left: -150px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      transition: $transcision;
+    }
+    .feature1{
+      background-color: $colorcard1;
+    }
+    .feature2{
+      background-color: $colorcard2;
+    }
+    .feature3{
+      background-color: $colorcard3;
+    }
+    .feature4{
+      background-color: $colorcard4;
+    }
+    .feature-card:hover{
+       .feature-hover{
+          transform: scale(8);
+       }
+        .feature-content{
+          h2,p{
+            color: $white;
+          }
+          a{
+            color: $color1;
+          }
+       }
+    }
 }
 
 //CARDS DE BLOG
@@ -246,36 +311,151 @@ h1{
     width: 180px;
     margin-bottom: 15px;
   }
-  .card{
-    .card-title{
-      color: $card-title;
-    }
-    .card-text{
-      color: $card-text;
-      font-size: 18px;
-      a{
-        text-decoration: underline;
-      }
-    }
-    .metadata{
-      font-size: 0.8em;
-      .category{
-        color: $light-green-text;
-      }
-    }
-    .author{
-      img{
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      }
-      p{
-        font-size: 15px;
-        font-weight: 800;
-        color: black;
-        margin-left: 10px;
-      }
-    }
-  }
+  // .card{
+  //   .card-title{
+  //     color: $card-title;
+  //   }
+  //   .card-text{
+  //     color: $card-text;
+  //     font-size: 18px;
+  //     a{
+  //       text-decoration: underline;
+  //     }
+  //   }
+  //   .metadata{
+  //     font-size: 0.8em;
+  //     .category{
+  //       color: $light-green-text;
+  //     }
+  //   }
+  //   .author{
+  //     img{
+  //     border-radius: 50%;
+  //     width: 40px;
+  //     height: 40px;
+  //     }
+  //     p{
+  //       font-size: 15px;
+  //       font-weight: 800;
+  //       color: black;
+  //       margin-left: 10px;
+  //     }
+  //   }
+  // }
   
+}
+
+footer{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/background/bg0.jpg");
+    background-size: cover;
+    background-position: center;
+    .container{
+        padding-top: 100px;
+            .card{
+                background-image: linear-gradient(rgb(255, 0, 0, 0.2) 0%,  rgb(255, 0, 0, 0.7) 100%), url("../assets/images/tarjeta.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 500px;
+                border: none;
+                border-radius: 10px;
+                box-shadow: $sombra;
+                transition: $transcision;
+                .card-body{
+                  padding-top: 4rem;
+                  transition: $transcision;
+                  img{
+                      height: 80px;
+                      width: 80px;
+                      border-radius: 50%;
+                      box-shadow: $sombra;
+                      transition: $transcision;
+                  }
+                  h5{
+                    transition: $transcision;
+                    margin: 1.5rem 0;
+                  }
+                }
+                .card-content{
+                    padding-left: 1rem;
+                    margin-bottom: 20px;
+                    transition: $transcision;
+                    h3{
+                      margin-bottom: 0px;
+                      color: $colormadera;
+                    }
+                    p {
+                      color: $colormadera;
+                      font-size: 15px;
+                      margin-left: 150px;
+                      margin-top: 0px;
+                    }
+                }
+                .card-footer{
+                  transition: $transcision;
+                  .icon-block{
+                    .fab{
+                      color: $color1;
+                      margin: 5px;
+                    }
+                  }
+                }
+            }
+            .card:hover{
+              filter: grayscale(10);
+              .card-body{
+                transform: translateY(20px);
+                img{
+                    // filter: blur(1px);
+                    transform: scale(1.3);
+                }
+                h5{
+                  transform: scale(1.3);
+                }
+              }
+              .card-content{
+                transform: translateY(-20px);
+                h3,p{
+                  color: $white;
+                }
+              }
+              .card-footer{
+                transform: translateX(-50px);
+                .icon-block{
+                  a{
+                    margin: 0 20px;
+                  }
+                }
+              }
+            }
+        
+    }
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .formulario{
+        .no-movil{
+            display: none;
+        }
+    }
+    .features{
+        .feature-content{
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .blog{
+        .col{
+            margin: 30px 40px;
+        }
+    }
+    footer{
+        .row{
+            .col-sm{
+                .card{
+                  margin: 30px 80px;
+                }
+            }
+        }
+    }
 }

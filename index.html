@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="estilo.css">
-    <!-- <link rel="stylesheet" href="media.css"> -->
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" type="text/css" href="output.css" />
 </head>
 
@@ -132,18 +132,19 @@
         <article class="main">
             <h1>Build your blog. Build your business.</h1>
             <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</h4>
-            <form>
-                <div class="input-group mb-3 send-email">
+            <form class="signup-form">
+                <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder="Ingresa email" required>
                     <div class="input-group-append">
-                        <span class="input-group-text">d
-                            <!-- <button type="submit">
-                                <i class="fas fa-paper-plane"></i>
-                            </button> -->
-                        </span>
+                        <button type="submit">
+                            <span class="input-group-text">
+                                    <i class="fas fa-paper-plane"></i>
+                            </span>
+                        </button>
+                        
                     </div>
                 </div>
             </form>
@@ -177,7 +178,7 @@
         
         <section class="container formulario">
             <div class="row">
-                <div class="col">
+                <div class="col no-movil">
                     <div class="card">
                         <img class="" src="assets/background/bg5.jpg">
                     </div>
@@ -191,31 +192,31 @@
                             <form>
                                 <div class="form-group row">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">Q</div>
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
                                     <input type="text" class="from-control" id="name" name="fname" placeholder="Nombre" required>    
                                 </div>
                                 <div class="form-group row">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">Q</div>
+                                        <span class="input-group-text"><i class="fas fa-user-friends"></i></span>
                                     </div>
                                     <input type="text" class="from-control" id="lastname" name="lastname" placeholder="Apellido">
                                 </div>
                                 <div class="form-group row">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">Q</div>
+                                        <span class="input-group-text"><i class="fas fa-birthday-cake"></i></span>
                                     </div>
                                     <input type="number" class="from-control" id="age" name="age" placeholder="Edad" min="18" max="35">
                                 </div>
                                 <div class="form-group row">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">Q</div>
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                     </div>
                                     <input type="email" class="from-control" id="email" name="email" placeholder="Correo">
                                 </div>
                                 <div class="form-group row">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">Q</div>
+                                        <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
                                     </div>
                                     <input type="password" class="from-control" id="password" name="password" placeholder="Contraseña">
                                 </div>
@@ -296,12 +297,33 @@
                 tool.
             </p>
             <p>Start publishing today:</p>
-            <form class="subscribe">
+            <!-- <form class="subscribe">
                 <div>
                     <input type="email" placeholder="Enter email" />
                     <button type="submit">Start My trial</button>
                 </div>
-            </form>
+            </form> -->
+            <div class="row">
+                <div class="col">
+                    <form class="signup-form">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Ingresa email" value="yimale3417@herrain.com" required>
+                            <div class="input-group-append">
+                                <button type="submit">
+                                    <span class="input-group-text">
+                                            <i class="fas fa-paper-plane"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+            
         </section>
     </article>
 
@@ -320,10 +342,11 @@
             <div class="feature-image">
                 <img src="assets/images/image_publish.png" alt="Image publish">
             </div>
+            <div class="feature-hover feature1"></div>
         </article>
         <article class="feature-card">
             <div class="feature-content">
-                <img src="iconos/icon_site_traffic.png" alt="icon traffic">
+                <img src="assets/iconos/icon_site_traffic.png" alt="icon traffic">
                 <h2>Attract and engage more website visitors.</h2>
                 <p>Enhance your email, social media channels, and paid ads with content from Matcha.</p>
                 <a href="">Get more site traffic →</a>
@@ -331,6 +354,7 @@
             <div class="feature-image">
                 <img src="assets/images/image_site_traffic.png" alt="Imagen traffic">
             </div>
+            <div class="feature-hover feature2"></div>
         </article>
         <article class="feature-card">
             <div class="feature-content">
@@ -342,6 +366,7 @@
             <div class="feature-image">
                 <img src="assets/images/image_capture.png" alt="Imagen faster">
             </div>
+            <div class="feature-hover feature3"></div>
         </article>
         <article class="feature-card">
             <div class="feature-content">
@@ -353,11 +378,12 @@
             <div class="feature-image">
                 <img src="assets/images/image_roi.png" alt="Imagen ROI">
             </div>
+            <div class="feature-hover feature4"></div>
         </article>
     </section>
 
 
-    <section>
+    <article>
         <div class="platform-before">
             <h1>How does Matcha wok?</h1>
             <p>Your blog can be so much more than window dressing. Use Matcha’s <a href="">simple formula</a> to
@@ -396,7 +422,7 @@
                 <a href="#">Track performance →</a>
             </div>
         </article>
-    </section>
+    </article>
 
 
     <!-- Sesion 6 -->
@@ -509,9 +535,15 @@
     <br><br>
 
     
-    
+    <section>
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </section>
 
-    <section class="container blog">
+    <article class="container blog">
         <div class="row">
             <div class="col">
                 <h2 class="title">Learn how to grow your ecommerce business.</h2>
@@ -597,15 +629,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </article>
 
-    <section>
-        <div class="text-center">
-            <div class="spinner-border" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-    </section>
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -616,120 +642,167 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-</body>
-<footer class="bg-matcha text-white text-lg-start">
-    <!-- Grid container -->
-    <div class="container p-4">
-        <!--Grid row-->
-        <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
-                <h2>Subscribe to our newsletter</h2>
-                <p>Become a content marketing expert, subscribe to the newsletter.</p>
-                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Subscribe"
-                    data-whatever="@mdo">Suscribirse</button>
-        
-                <div class="modal fade" id="Subscribe" tabindex="-1" aria-labelledby="SubscribeLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title text-matcha" id="SubscribeLabel">Subscribe</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+        <script src="app.js"></script>
+
+    <footer class="text-white text-lg-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/perfil2.jpg" alt="">
+                            <h5>Luis Manuel Tapia Bautista</h5>
+                        </div>
+                        <div class="card-content text-center">
+                            <h3>14030598</h3>
+                            <p>@itcelaya.edu.mx</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="icon-block text-right">
+                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/14030598/santander-front" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="email-name" class="col-form-label text-matcha">Email:</label>
-                                        <input type="text" class="form-control" id="email-name" placeholder="@gmail.com.mx">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/perfil3.jpg" alt="">
+                            <h5>Bedu</h5>
+                        </div>
+                        <div class="card-content text-center">
+                            <h3>csanchez</h3>
+                            <p>@bedu.org</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="icon-block text-right">
+                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/andres2093/santander-front" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">PLATFORM</h5>
-
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="#!" class="text-white">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Publish</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Distribute</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Measure</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Integrations</a>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">MATCHA</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!" class="text-white">About</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Story</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Team</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Careers</a>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">PLATFORM</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!" class="text-white">Privacy</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Terms</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Support</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Contact</a>
-                    </li>
-                </ul>
-            </div>
         </div>
-        <!--Grid row-->
-    </div>
-    <!-- Grid container -->
+        <div style="height: 50px;"></div>
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+                    <h2>Subscribe to our newsletter</h2>
+                    <p>Become a content marketing expert, subscribe to the newsletter.</p>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Subscribe"
+                        data-whatever="@mdo">Suscribirse</button>
+            
+                    <div class="modal fade" id="Subscribe" tabindex="-1" aria-labelledby="SubscribeLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-matcha" id="SubscribeLabel">Subscribe</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="email-name" class="col-form-label text-matcha">Email:</label>
+                                            <input type="text" class="form-control" id="email-name" placeholder="@gmail.com.mx">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">PLATFORM</h5>
+    
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Publish</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Distribute</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Measure</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Integrations</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">MATCHA</h5>
+    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white">About</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Story</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Team</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">PLATFORM</h5>
+    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Support</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://bedu-fef.netlify.app/">Matcha.com</a>
+            All Rights Reserved
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://bedu-fef.netlify.app/">Matcha.com</a>
-        All Rights Reserved
-    </div>
-    <!-- Copyright -->
-</footer>
 
 </html>

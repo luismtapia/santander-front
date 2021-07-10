@@ -2,12 +2,11 @@
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-    .navbar, .actions{
+    /* .navbar, .actions{
         display: none;
-    }
+    } */
     h1{
         font-size: 2em;
-        
     }
     main{
         margin-top: 0;

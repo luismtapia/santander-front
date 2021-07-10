@@ -295,10 +295,6 @@ button {
 .feature-image > img{
     height: 250px;
 }
-.feature-image:hover{
-    transform: translateX(-30px);
-    transition: all 800ms;
-}
 .feature-content > p{
     font-size: 1em;
 }

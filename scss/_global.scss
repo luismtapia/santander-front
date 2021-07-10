@@ -11,7 +11,7 @@ $card-text: #4a4a4a;
 $text-parrafo: 1em;
 $bg-color: #FbFbFb;
 $color1: #F0F0F0;
-$color2: #E8E7E7;
+$color2: #ced11d;
 $color3: #CECDC9;
 $color5: #E8F8F0;
 $color6: #3c5722;
@@ -22,14 +22,28 @@ $color10: #b9e07a;
 $color11: #6E5D37;
 $color12: #d9d476;
 $colormadera: #e2b05a;
+$colorcielo: #87CEEB;
+$colorcard1: #ec737b;
+$colorcard2: #74ccec;
+$colorcard3: #ecac54;
+$colorcard4: #64b44c;
+
 $sombra: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 $radio: 30px;
+$transcision: all 0.25s linear;
 
 %navbar {
     // font-family: 'Courier New', Courier, monospace;
     font-family: "Open Sans", sans-serif;
     background-color: $bg-color;
     color: $color5;
+    .active::after{
+        content: " ";
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+        border-top: 5px solid $colormadera;
+    }
 }
 %main{
     padding: 1vh 0 1vh 0;
